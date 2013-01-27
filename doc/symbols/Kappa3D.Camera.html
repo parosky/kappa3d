@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - Kappa3D.Camera</title>
+
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+	padding: 8px;
+}
+
+#content
+{
+	margin-left: 190px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+	background-color: #7F8FB1;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px #7F8FB1 solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/Kappa3D.html">Kappa3D</a></li>
+	
+	<li><a href="../symbols/Kappa3D.Camera.html">Kappa3D.Camera</a></li>
+	
+	<li><a href="../symbols/Kappa3D.K3DObject.html">Kappa3D.K3DObject</a></li>
+	
+	<li><a href="../symbols/Kappa3D.Matrix.html">Kappa3D.Matrix</a></li>
+	
+	<li><a href="../symbols/Kappa3D.Polygon.html">Kappa3D.Polygon</a></li>
+	
+	<li><a href="../symbols/Kappa3D.Scene.html">Kappa3D.Scene</a></li>
+	
+	<li><a href="../symbols/Kappa3D.Vector.html">Kappa3D.Vector</a></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class Kappa3D.Camera
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				<br />Extends
+					<a href="../symbols/Kappa3D.K3DObject.html">Kappa3D.K3DObject</a>.<br />
+				
+			
+				オブジェクト追跡などを行うカメラ
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/kappa3d.js.html">kappa3d.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class Kappa3D.Camera.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/Kappa3D.Camera.html#constructor">Kappa3D.Camera</a></b>(scene, param)
+							</div>
+							<div class="description">新しくカメラを作成する</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class Kappa3D.Camera.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Kappa3D.Camera.html#track">track</a></b>(obj, tracktype)
+								</div>
+								<div class="description">カメラの追跡情報を与える</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Kappa3D.Camera.html#update">update</a></b>()
+								</div>
+								<div class="description">カメラの位置を更新する。内部的に利用。</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+				<dl class="inheritsList">
+				<dt>Methods borrowed from class <a href="../symbols/Kappa3D.K3DObject.html">Kappa3D.K3DObject</a>: </dt><dd><a href="../symbols/Kappa3D.K3DObject.html#addPolygon">addPolygon</a>, <a href="../symbols/Kappa3D.K3DObject.html#checkCollision">checkCollision</a>, <a href="../symbols/Kappa3D.K3DObject.html#draw">draw</a>, <a href="../symbols/Kappa3D.K3DObject.html#getPerspectiveCoordinate">getPerspectiveCoordinate</a>, <a href="../symbols/Kappa3D.K3DObject.html#look">look</a>, <a href="../symbols/Kappa3D.K3DObject.html#move">move</a>, <a href="../symbols/Kappa3D.K3DObject.html#moveForward">moveForward</a>, <a href="../symbols/Kappa3D.K3DObject.html#moveLeft">moveLeft</a>, <a href="../symbols/Kappa3D.K3DObject.html#moveTo">moveTo</a>, <a href="../symbols/Kappa3D.K3DObject.html#moveUp">moveUp</a>, <a href="../symbols/Kappa3D.K3DObject.html#rotate">rotate</a>, <a href="../symbols/Kappa3D.K3DObject.html#rotatePitch">rotatePitch</a>, <a href="../symbols/Kappa3D.K3DObject.html#rotateRoll">rotateRoll</a>, <a href="../symbols/Kappa3D.K3DObject.html#rotateYaw">rotateYaw</a>, <a href="../symbols/Kappa3D.K3DObject.html#scale">scale</a>, <a href="../symbols/Kappa3D.K3DObject.html#setAnimation">setAnimation</a>, <a href="../symbols/Kappa3D.K3DObject.html#setColor">setColor</a></dd>
+				</dl>
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>Kappa3D.Camera</b>(scene, param)
+				</div>
+				
+				<div class="description">
+					新しくカメラを作成する
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								<span class="light fixedFont">{<a href="../symbols/Kappa3D.Scene.html">Kappa3D.Scene</a>}</span>  <b>scene</b>
+								
+							</dt>
+								<dd>カメラを適用するシーン</dd>
+						
+							<dt>
+								<span class="light fixedFont">{Object}</span>  <b>param</b>
+								
+							</dt>
+								<dd>param.center はカメラの中心位置を表すベクトル、param.upper はカメラの上方を表すベクトル、param.direction はカメラの向き</dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+						<dl class="detailList">
+						<dt class="heading">Returns:</dt>
+						
+								<dd><span class="light fixedFont">{<a href="../symbols/Kappa3D.Camera.html">Kappa3D.Camera</a>}</span> 作成されたカメラ</dd>
+						
+						</dl>
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="track"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>track</b>(obj, tracktype)
+					
+					</div>
+					<div class="description">
+						カメラの追跡情報を与える
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Kappa3D.K3DObject.html">Kappa3D.K3DObject</a>}</span> <b>obj</b>
+									
+								</dt>
+								<dd>追跡対象のオブジェクト</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>tracktype</b>
+									
+								</dt>
+								<dd>追跡タイプ。現状では "gom" のみ。オブジェクトとカメラがゴムひもで結ばれているような追跡を行う。</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="update"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>update</b>()
+					
+					</div>
+					<div class="description">
+						カメラの位置を更新する。内部的に利用。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Thu Sep 13 2012 00:00:27 GMT+0900 (JST)
+		</div>
+	</body>
+</html>

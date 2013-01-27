@@ -1,0 +1,33 @@
+<html>
+    
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Kappa3D Demo 2 - Camera Type</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+        <script type="text/javascript" src="../kappa3d.js"></script>
+        <script type="text/javascript" src="demo2.js"></script>
+    </head>
+    
+    <body bgcolor="#000000" style="margin:0;padding:0;">
+        <canvas width=320 height=200 style="margin:0;padding:0;"></canvas>
+        <p> <font color="white">Camera Type:
+            <select id="selectbox">
+                <option value="gom">ゴム紐</option>
+                <option value="firstperson">一人称視点</option>
+                <option value="lookdown">角度一定見下ろし</option>
+                <option value="gaze">注目</option>
+            </select>
+        </p>
+
+        <p>
+            Light: 
+            <br>
+            R <input type="range" value="255" min="0" max="255" step="5" style="width:80px" id="R">
+            G <input type="range" value="255" min="0" max="255" step="5" style="width:80px" id="G">
+            B <input type="range" value="255" min="0" max="255" step="5" style="width:80px" id="B">
+            <br>
+            Altitude <input type="range" value="0" min="-90" max="90" step="5" style="width:80px" id="Al">
+            Azimuth <input type="range" value="0" min="-180" max="180" step="5" style="width:80px" id ="Az">
+    </body>
+
+</html>
